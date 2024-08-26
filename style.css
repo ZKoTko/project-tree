@@ -1,0 +1,316 @@
+body {
+    font-family: "Poppins", sans-serif !important;
+}
+/* Home */
+.home__main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.home-logo {
+    width: 36px;
+    height: 48px;
+}
+.home-img {
+    width: 254px;
+    height: 421px;
+}
+.home-btn {
+    color: #0071e3;
+    font-weight: 500;
+    font-size: 14.94px;
+    padding: 8px 20.3px;
+    border: 1px solid #0071e3;
+    border-radius: 14.53px;
+    line-height: 11px;
+}
+.home-btn:hover {
+    color: #0071e3;
+    border: 1px solid #0071e3;
+}
+.home__text {
+    text-align: center;
+}
+.home__text h1 {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 48.54px;
+}
+/* Roles */
+.roles__main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.roles__list {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.roles__title-text {
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 64px;
+}
+.roles__title-text h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+.roles__title-text p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.roles__list h2 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.accordion-item-header {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 8px 10px 4px;
+    line-height: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .2s linear;
+}
+.accordion-item-header img {
+    width: 16px;
+    height: 8px;
+    transition: all .2s linear;
+}
+.active img {
+    transform: rotate(180deg);
+}
+.active {
+    color: #0071e3;
+    font-weight: 500;
+}
+.accordion {
+    width: 100%;
+}
+.accordion-item {
+    border: 0 !important;
+    border-bottom: 1px solid #444444 !important;
+    border-radius: 0 !important;
+    user-select: none;
+}
+.accordion-item-body-content {
+    padding: 0px 8px 14px 4px;
+}
+.accordion-item-body-content p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 16px !important;
+}
+
+/* Application */
+.application__main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.application__container {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.application__main .home-logo {
+    margin: 0 auto;
+    margin-bottom: 64px;
+}
+.back-btn__wrapper button {
+    color: #0071e3;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 0;
+    padding-left: 12px;
+    border: 0 !important;
+    margin-right: 24px;
+}
+.back-btn__wrapper button:hover {
+    color: #0071e3 !important;
+    border: 0 !important;
+}
+.back-btn__wrapper {
+    margin-bottom: 64px;
+}
+.application__text-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.application__text-title h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 16px !important;
+}
+.application__text-title p {
+    color: #737373 !important;
+    font-size: 16px !important;
+    font-weight: 400 !important; 
+    margin-bottom: 0 !important;
+}
+.application__text-title button {
+    font-size: 18.2px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #0071e3;
+    border-radius: 17px;
+    padding: 8px 24px;
+}
+.application__text-title button:hover {
+    color: #fff !important;
+    background-color: #0071e3 !important; 
+}
+.application__text-title a {
+    padding-right: 24px;
+}
+.application__text p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
+}
+.application__text b {
+    font-weight: 500 !important;
+}
+.application__text ul {
+    padding: 0 !important;
+}
+.application__text li {
+    list-style: none !important;
+    font-weight: 300;
+}
+.application__text {
+    padding-bottom: 100px;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+/* Application form */
+.application__form-wrapper {
+    padding: 40px 0 64px 10px;
+}
+.application__form-title h2 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 8px !important;
+}
+.application__form-title p {
+    color: #000;
+    font-weight: 300;
+    font-size: 14px;
+}
+.application__form-title span {
+    color: #ff0000;
+    font-size: 16px;
+}
+
+/* Form */
+.form-group {
+    position: relative;
+    margin-bottom: 16px;
+}
+.form-group label{
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    font-weight: 400;
+    font-size: 12px;
+}
+.form-group input {
+    height: 60px;
+    width: 100%;
+    max-width: 370px;
+    border-radius: 11px;
+    border: 1px solid #bfbfbf !important;
+    font-size: 16px;
+    padding-top: 20px;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+.form-group span {
+    color: #ff0000;
+    font-size: 16px;
+}
+.form-links label {
+    position: relative !important;
+    top: unset;
+    left: unset;
+}
+.form-links {
+    padding-left: 12px;
+}
+.form-long input{
+    width: 100%;
+    max-width: none !important;
+}
+.application__ready {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: auto 0;
+    justify-content: center;
+}
+.ready-sent-img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 32px;
+}
+.application__ready  h3 {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .home__text h1 {
+        font-size: 32px;
+        padding: 0 20px;
+    }
+    .roles__title-text {
+        padding: 0 20px;
+    }
+    .roles__title-text p {
+        font-size: 16px;
+    }
+    .roles__title-text h1 {
+        margin-bottom: 16px;
+    }
+    .accordion {
+        padding: 0 20px;
+    }
+    .application__text-title a {
+        padding-right: 0;
+    }
+    .application__text-title h2 {
+        font-size: 20px;
+        margin-bottom: 8px !important;
+    }
+    .application__text {
+        padding-bottom: 32px;
+    }
+    .application__ready h3 {
+        font-size: 20px;
+    }
+}
