@@ -128,6 +128,7 @@ a {
     justify-content: space-between;
     align-items: center;
     transition: all .2s linear;
+    letter-spacing: 0.6px;
 }
 .accordion-item-header img {
     width: 20px;
@@ -137,8 +138,9 @@ a {
     transform: rotate(180deg);
 }
 .active {
-    color: #0071e3;
     font-weight: 500;
+    color: #0071e3;
+    letter-spacing: 0.2px;
 }
 .accordion {
     width: 100%;
@@ -180,7 +182,7 @@ a {
     font-weight: 300;
     font-size: 16px;
     padding: 0;
-    padding-left: 12px;
+    padding-left: 8px;
     border: 0 !important;
     margin-right: 24px;
 }
@@ -190,6 +192,9 @@ a {
 }
 .back-btn__wrapper {
     margin-bottom: 64px;
+}
+.back-btn__wrapper img{
+    width: 16px;
 }
 .application__text-title {
     display: flex;
@@ -312,15 +317,14 @@ a {
     justify-content: center;
 }
 .ready-sent-img {
-    width: 70px;
-    height: 70px;
+    width: 65px;
     margin-bottom: 32px;
-
-      
-
-        animation-duration: 1.8s; /* don't forget to set a duration! */
-      
+    animation-duration: 1.8s;
+    border: 3px solid #0071e3;
+    border-radius: 50%;
+    padding: 10px;
 }
+
 .application__ready  h3 {
     margin-bottom: 50px;
     font-weight: 500;
