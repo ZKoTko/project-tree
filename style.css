@@ -128,7 +128,6 @@ a {
     justify-content: space-between;
     align-items: center;
     transition: all .2s linear;
-    letter-spacing: 0.6px;
 }
 .accordion-item-header img {
     width: 20px;
@@ -138,9 +137,7 @@ a {
     transform: rotate(180deg);
 }
 .active {
-    font-weight: 500;
     color: #0071e3;
-    letter-spacing: 0.2px;
 }
 .accordion {
     width: 100%;
@@ -332,6 +329,66 @@ a {
     text-align: center;
     padding: 0 20px;
 }
+
+.form-links input{
+    border: 0 !important;
+    outline: 0 !important;
+    max-width: 250px !important;
+    width: auto !important;
+}
+.form-links {
+    padding-left: 0 !important;
+}
+
+
+.custom-file-upload {
+    color: #0071e3 !important;
+    font-weight: 500;
+    font-size: 14.94px;
+    padding: 8px 20.3px;
+    border: 1px solid #0071e3 !important;  
+    border-radius: 14.53px;
+    line-height: 11px;
+    transition: all .15s linear;
+}
+.custom-file-upload:hover {
+    color: #fff !important;
+    background: #0071e3 !important;
+}
+#file-name {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin-right: 20px;
+}
+.cv-label {
+    margin-bottom: 15px;
+    padding-left: 4px;
+}
+.form-links {
+    font-size: 14px;
+}
+.cv-group {
+    display: none;
+}
+.cv-opener {
+    cursor: pointer;
+}
+.cv-group textarea {
+    width: 100%;
+    border-radius: 11px;
+    border: 1px solid #bfbfbf !important;
+    font-size: 16px;
+    padding-top: 28px;
+    outline: 0 !important;
+    box-shadow: none !important;
+    max-height: 120px !important;
+    resize: none;
+}
+.cv-group label {
+    background: #fff;
+}
+
 
 @media only screen and (max-width: 768px) {
     .home__text h1 {

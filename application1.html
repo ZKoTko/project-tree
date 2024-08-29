@@ -90,13 +90,23 @@
                         <input type="tel" class="form-control" id="phone">
                     </div>
                     <div class="form-group form-links">
-                        <label for="resume">Resume/CV</label>
+                        <label for="resume" class="cv-label">Resume/CV <span>*</span></label>
                         <div>
-                            <a href="#" class="text-primary">Attach</a>,
+                            <div style="margin-bottom: 16px;">
+                                <label for="file-attach" class="custom-file-upload btn home-btn">
+                                    Attach
+                                </label>
+                                <input type="file" class="file-attach" id="file-attach" style="display: none;">
+                                <span id="file-name">No file chosen</span> 
+                            </div>           
                             <a href="#" class="text-primary">Dropbox</a>,
                             <a href="#" class="text-primary">Google Drive</a>, or
-                            <a href="#" class="text-primary">enter manually</a>
+                            <a class="text-primary cv-opener">enter manually</a>
                         </div>
+                    </div>
+                    <div class="form-group form-long cv-group">
+                        <label for="linkedin">Resume/CV <span>*</span></label>
+                        <textarea rows="3" type="url" class="form-control" id="linkedin"></textarea>
                     </div>
                     <div class="form-group form-long">
                         <label for="linkedin">LinkedIn Profile <span>*</span></label>
@@ -131,6 +141,23 @@
             document.querySelector('.application__container').style.display = 'none';
             document.querySelector('.application__ready').style.display = 'flex';
         });
+    </script>
+    <script>
+        const fileUpload = document.getElementById('file-attach');
+        const fileName = document.getElementById('file-name');
+
+        fileUpload.addEventListener('change', function() {
+            if (fileUpload.files.length > 0) {
+                fileName.textContent = fileUpload.files[0].name;
+            } else {
+                fileName.textContent = 'No file chosen';
+            }
+        });
+
+        document.querySelector('.cv-opener').addEventListener('click', function() {
+            document.querySelector('.cv-group').style.display = 'block';
+        });
+
     </script>
   </body>
 </html>
