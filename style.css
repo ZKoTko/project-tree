@@ -78,6 +78,11 @@ a {
     margin-bottom: 40px;
     font-weight: 500;
     font-size: 48.54px;
+    transition: all .3s linear;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    padding: 0 20px;
 }
 /* Roles */
 .roles__main {
@@ -128,6 +133,9 @@ a {
     justify-content: space-between;
     align-items: center;
     transition: all .2s linear;
+}
+.accordion-item-header:hover {
+    color: #0071e3;
 }
 .accordion-item-header img {
     width: 20px;
@@ -284,10 +292,11 @@ a {
     max-width: 370px;
     border-radius: 11px;
     border: 1px solid #bfbfbf !important;
-    font-size: 16px;
+    font-size: 14px;
     padding-top: 20px;
     outline: 0 !important;
     box-shadow: none !important;
+    transition: all .2s linear;
 }
 .form-group span {
     color: #ff0000;
@@ -317,9 +326,6 @@ a {
     width: 65px;
     margin-bottom: 32px;
     animation-duration: 1.8s;
-    border: 3px solid #0071e3;
-    border-radius: 50%;
-    padding: 10px;
 }
 
 .application__ready  h3 {
@@ -339,7 +345,9 @@ a {
 .form-links {
     padding-left: 0 !important;
 }
-
+.application__ready .back-btn__wrapper button{
+    margin-right: 0;
+}
 
 .custom-file-upload {
     color: #0071e3 !important;
@@ -378,18 +386,28 @@ a {
     width: 100%;
     border-radius: 11px;
     border: 1px solid #bfbfbf !important;
-    font-size: 16px;
-    padding-top: 28px;
+    font-size: 14px;
+    padding-top: 12px;
     outline: 0 !important;
     box-shadow: none !important;
     max-height: 120px !important;
     resize: none;
+    transition: all .2s linear;
 }
 .cv-group label {
     background: #fff;
 }
+.form-group input:focus, 
+.form-group textarea:focus {
+    border: 1px solid #0071e3 !important;  /* цвет и ширина рамки */
+}
 
-
+@media only screen and (max-width: 992px) {
+    .home__text h1 {
+        font-size: 38px;
+        padding: 0 20px;
+    }
+}
 @media only screen and (max-width: 768px) {
     .home__text h1 {
         font-size: 32px;
